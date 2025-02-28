@@ -703,3 +703,4 @@ void MainWindow::on_actionExit_triggered()                              // EXIT 
 {
     QApplication::exit();
 }
+
