@@ -30,7 +30,6 @@ SOURCES += \
     mainwindow.cpp
 
 HEADERS += \
-    CH341DLL_EN.H \
     deviceselect.h \
     mainwindow.h
 
@@ -44,8 +43,3 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 win32: LIBS += -L$$PWD/./ -lCH341DLLA64
-
-INCLUDEPATH += $$PWD/.
-DEPENDPATH += $$PWD/.
-
-CONFIG(release, debug|release):DEFINES += QT_NO_DEBUG_OUTPUT

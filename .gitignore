@@ -76,3 +76,6 @@ CMakeLists.txt.user*
 CH341DLL_EN.H
 CH341DLLA64.DLL
 CH341DLLA64.LIB
+
+# Build folder
+build
