@@ -2,12 +2,12 @@
 # CH341-I2C-Tool
 A GUI tool that uses the [CH341 USB Bridge Controller](https://www.wch-ic.com/products/CH341.html) to read/write via the I2C protocol.
 
-![Main window of the CH341 I2C Tool](https://lh3.googleusercontent.com/drive-viewer/AITFw-zcXG6g1PMe2BBHx8ehKfZyJ9GyODO30DPTJSXPY3ouXUO5A5mqoNB-Y-wTTqgvBOzj0YHRxydmQarmRUsGkx9RYfwXTA=s2560)
+![Main window of the CH341 I2C Tool](Preview.png)
 
 ## Building the source
-Download [CH341PAR.ZIP](https://www.wch-ic.com/downloads/CH341PAR_ZIP.html). Extract `\LIB\CH341\CH341DLL_EN.H` and `\LIB\CH341\amd64\CH341DLLA64.LIB` into the project root. This then builds like any Qt project (assuming MinGW 64-bit is the version installed and it's added to your path). 
+Download [CH341PAR.ZIP](https://www.wch-ic.com/downloads/CH341PAR_ZIP.html). Extract `\LIB\CH341\CH341DLL_EN.H` and `\LIB\CH341\amd64\CH341DLLA64.LIB` into the project root. This then builds like any Qt project (assuming MinGW 64-bit is the version installed and is added to your path). 
 
-Run `qmake CH341_I2C_Tool.pro` to generate the makefile, then `make` to compile the executable. Finally, use `windeployqt CH341_I2C_Tool.exe` to copy the necessary libraries so the program can launch. 
+Run `qmake CH341_I2C_Tool.pro` to generate the makefile, then `mingw32-make` to compile the executable. Finally, use `windeployqt CH341_I2C_Tool.exe` to copy the necessary Qt libraries so the program can launch. 
 
 ## Usage
 Install the driver first by downloading [CH341PAR.EXE](https://www.wch-ic.com/downloads/CH341PAR_EXE.html) and launching it.
